@@ -1,0 +1,40 @@
+.input_label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input_field {
+  padding: 12px;
+  width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.big {
+    width: 400px;
+}
+
+.input_field::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.48);
+}
+
+@media (max-width: 680px) {
+  .input_label {
+    width: 100%;
+  }
+  .input_field {
+    width: 100%;
+  }
+  .big{
+    width: 100%;
+  }
+}

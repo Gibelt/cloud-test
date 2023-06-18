@@ -1,0 +1,43 @@
+.mainForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.input_label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gender_select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.48);
+  width: 300px;
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  background-image: url('../../../public/icons/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 12px;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 88px;
+}

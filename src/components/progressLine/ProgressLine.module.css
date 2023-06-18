@@ -1,0 +1,53 @@
+.content {
+  height: 16px;
+  margin-bottom: 67px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.line {
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  width: 100%;
+  height: 8px;
+}
+
+.lineHalf {
+  background-image: -webkit-linear-gradient(
+    left,
+    #5558fa,
+    #5558fa 50%,
+    transparent 50%,
+    transparent 100%
+  );
+}
+
+.lineFull {
+  background: #5558fa;
+}
+
+.dotGroup {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.dot {
+  width: 16px;
+}
+
+.dotCurrent {
+  background-image: url('../../../public/icons/dot-current.svg');
+}
+
+.dotChecked {
+  background-image: url('../../../public/icons/dot-checked.svg');
+}
+
+.dotNotChecked {
+  background: #a6a6a6;
+  border-radius: 100px;
+}
