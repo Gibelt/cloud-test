@@ -1,0 +1,45 @@
+.mainForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.areaContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+  position: relative;
+}
+
+.textArea {
+  height: 84px;
+  box-sizing: border-box;
+  padding: 12px;
+  resize: none;
+}
+
+.textCount {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: rgba(0, 0, 0, 0.48);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.formButtons {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

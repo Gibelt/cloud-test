@@ -2,28 +2,28 @@ import cn from 'classnames'
 import s from './ProgressLine.module.css'
 
 interface ProgressLineProps {
-  step: string
+  step: number
 }
 
-export default function ProgressLine({ step }: ProgressLineProps) {
+export default function ProgressLine({ step }: ProgressLineProps): JSX.Element {
   const lineClass = cn(s.line, {
-    [s.lineHalf]: step === '2',
-    [s.lineFull]: step === '3',
+    [s.lineHalf]: step === 2,
+    [s.lineFull]: step === 3,
   })
   const startDotClass = cn(s.dot, {
-    [s.dotCurrent]: step === '1',
-    [s.dotChecked]: step === '2' || step === '3',
+    [s.dotCurrent]: step === 1,
+    [s.dotChecked]: step === 2 || step === 3,
   })
 
   const centerDotClass = cn(s.dot, {
-    [s.dotCurrent]: step === '2',
-    [s.dotChecked]: step === '3',
-    [s.dotNotChecked]: step === '1',
+    [s.dotCurrent]: step === 2,
+    [s.dotChecked]: step === 3,
+    [s.dotNotChecked]: step === 1,
   })
 
   const endDotClass = cn(s.dot, {
-    [s.dotCurrent]: step === '3',
-    [s.dotNotChecked]: step === '1' || step === '2',
+    [s.dotCurrent]: step === 3,
+    [s.dotNotChecked]: step === 1 || step === 2,
   })
   return (
     <div className={s.content}>

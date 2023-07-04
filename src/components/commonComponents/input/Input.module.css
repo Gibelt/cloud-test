@@ -1,11 +1,14 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .input_label {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
 }
 
 .input_field {
@@ -17,7 +20,7 @@
 }
 
 .big {
-    width: 400px;
+  width: 400px;
 }
 
 .input_field::placeholder {
@@ -27,14 +30,24 @@
   color: rgba(0, 0, 0, 0.48);
 }
 
+.errorText {
+  color: rgba(0, 0, 0, 0.48);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
 @media (max-width: 680px) {
+  .content {
+    width: 100%;
+  }
   .input_label {
     width: 100%;
   }
   .input_field {
     width: 100%;
   }
-  .big{
+  .big {
     width: 100%;
   }
 }

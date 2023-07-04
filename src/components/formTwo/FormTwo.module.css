@@ -1,0 +1,95 @@
+.mainForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.advantagesList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.advantagesItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.advantagesDelete {
+  width: 20px;
+  height: 19px;
+  border: none;
+  background-image: url('../../../public/icons/delete.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+}
+
+.advantagesAppend {
+  width: 44px;
+  height: 44px;
+  border: 1.5px solid #5558fa;
+  border-radius: 4px;
+  background-image: url('../../../public/icons/append.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+}
+
+.checkboxList {
+  list-style-type: none;
+}
+
+.checkboxItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkboxInput {
+  border-radius: 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.radioItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.radioInput {
+  width: 16px;
+  height: 16px;
+}
+
+.formButtons {
+    margin-top: 40px;   
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    transform: translateY(-0.075em);
+  } */

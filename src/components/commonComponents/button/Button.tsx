@@ -1,14 +1,15 @@
 import s from './Button.module.css'
 
-export interface StandardComponentProps {
+export interface ButtonComponentProps {
   title: string
-  type: string
+  type: 'submit' | 'reset' | 'button';
   mode: string
+  onClick?: () => void
 }
 
-export default function Button({ title, type, mode }: StandardComponentProps) {
+export default function Button({ title, type, mode, onClick }: ButtonComponentProps): JSX.Element {
   return (
-    <button type={type ? 'submit' : 'button'} className={s[`${mode}`]}>
+    <button onClick={onClick} type={type} className={s[`${mode}`]}>
       {title}
     </button>
   )

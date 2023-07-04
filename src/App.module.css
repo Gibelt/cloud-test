@@ -6,3 +6,21 @@
   padding: 24px 17%;
   background: #f4f4f5;
 }
+
+@media (max-width: 375px) {
+  .wrapper {
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .wrapper {
+    padding: 24px 45px;
+  }
+}
+
+/* @media (min-width: 425px) and (max-width: 767px) {
+  .wrapper {
+    padding: 24px 45px;
+  }
+} */

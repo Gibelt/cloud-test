@@ -1,18 +1,20 @@
-import { UseFormRegister, FieldValues } from 'react-hook-form'
+import { Fragment } from 'react'
 import s from './Input.module.css'
 
 export interface InputProps {
-  register: UseFormRegister<FieldValues>
-  label: string
-  htmlFor: string
+  register: any
+  label?: string
+  htmlFor?: string
   placeholder: string
-  id: string
+  id?: string
   name: string
   width: string
   type: string
+  error?: string
 }
 
 export default function Input({
+  error,
   register,
   label,
   htmlFor,
@@ -23,8 +25,10 @@ export default function Input({
   type,
 }: InputProps) {
   return (
-    <label className={s.input_label} htmlFor={htmlFor}>
+    <div className={s.content}>
+    {label && <label className={s.input_label} htmlFor={htmlFor}>
       {label}
+      </label>}
       <input
         type={type}
         className={`${s.input_field} ${s[`${width}`]}`}
@@ -32,6 +36,7 @@ export default function Input({
         {...register(name)}
         id={id}
       />
-    </label>
+      {error && <p className={s.errorText}>{error}</p>}
+      </div>
   )
 }

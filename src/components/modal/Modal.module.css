@@ -1,0 +1,70 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.16);
+}
+
+.content {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 460px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.closeIcon {
+  background-image: url('../../../public/icons/close-icon.svg');
+  width: 28px;
+  height: 28px;
+}
+
+.iconSuccess {
+  background-image: url('../../../public/icons/success.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+  padding: 26px;
+}
+
+.iconError {
+  composes: iconSuccess;
+  background-image: url('../../../public/icons/error.svg');
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .content {
+    width: 90%;
+  }
+}
