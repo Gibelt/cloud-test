@@ -1,8 +1,4 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-
-// export const setDa = createAsyncThunk('data/setDa', async (dispatch) => {
-//   dispatch(setUserData())
-// })
+import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
   userData: {},

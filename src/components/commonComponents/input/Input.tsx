@@ -1,4 +1,3 @@
-import { Fragment } from 'react'
 import s from './Input.module.css'
 
 export interface InputProps {

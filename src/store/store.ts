@@ -2,7 +2,7 @@ import { configureStore } from '@reduxjs/toolkit'
 import dataReducer from './slices/dataSlice'
 import { Api } from '../api/api'
 
-export interface Root {
+export interface RootState {
   data: {
     userData: object
   }
